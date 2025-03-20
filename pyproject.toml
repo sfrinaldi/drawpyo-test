@@ -1,6 +1,7 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["setuptools", "setuptools_scm"]
+requires-python = ">=3.9"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "drawpyo"
@@ -17,14 +18,15 @@ classifiers = [
 requires-python = ">=3.8"
 dynamic = ["version"]
 dependencies = [
-    "toml >= 0.10.2; python_version < '3.11'"
-    ]   
+    "toml >= 0.10.2; python_version < '3.13'"
+]   
+
+[tool.setuptools.packages.find]
+where = [ "src" ]
+
+[tool.setuptools_scm]
+write_to = "src/version.py"
 
 [project.urls]
 Homepage = "https://github.com/MerrimanInd/drawpyo"
 Issues = "https://github.com/MerrimanInd/drawpyo/issues"
-
-[tool.pytest.ini_options]
-addopts = [
-    "--import-mode=importlib",
-]

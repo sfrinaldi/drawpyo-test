@@ -1,4 +1,4 @@
-from .xml_base import XMLBase
+from drawpyo.xml_base import XMLBase
 
 
 class Page:

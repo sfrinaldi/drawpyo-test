@@ -1,8 +1,8 @@
-from .xml_base import XMLBase
+from drawpyo.xml_base import XMLBase
 from datetime import datetime
 from os import path, makedirs
 from sys import version_info
-from .page import Page
+from drawpyo.page import Page
 
 
 class File(XMLBase):

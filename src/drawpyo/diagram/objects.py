@@ -1,14 +1,14 @@
 from os import path
 
-from .base_diagram import (
+from drawpyo.diagram.base_diagram import (
     DiagramBase,
     Geometry,
     import_shape_database,
     style_str_from_dict,
 )
-from .text_format import TextFormat
+from drawpyo.diagram.text_format import TextFormat
 
-__all__ = ["Object", "BasicObject", "Group", "object_from_library"]
+#__all__ = ["Object", "BasicObject", "Group", "object_from_library"]
 
 general = import_shape_database(
     file_name=path.join("shape_libraries", "general.toml"), relative=True

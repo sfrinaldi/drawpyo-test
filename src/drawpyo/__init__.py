@@ -1,8 +1,23 @@
-from .xml_base import XMLBase
-from .file import File
-from .page import Page
+from drawpyo.diagram import (
+    DiagramBase, 
+    TextFormat,
+    Edge, 
+    BasicEdge, 
+    EdgeGeometry, 
+    Point,
+    Object, 
+    BasicObject, 
+    Group, 
+    List,
+)
 
-from . import diagram
-from . import diagram_types
+from drawpyo.diagram_types import (
+    NodeObject, 
+    TreeDiagram,
+    ClassDiagram,
+)
 
-__version__ = "0.2.2"
+from drawpyo.file import File
+from drawpyo.page import Page
+
+__project__ = "drawpyo"

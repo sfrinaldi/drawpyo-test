@@ -1,14 +1,14 @@
-from ..xml_base import XMLBase
+from drawpyo.xml_base import XMLBase
 from os import path
 
 
-__all__ = [
-    "DiagramBase",
-    "style_str_from_dict",
-    "import_shape_database",
-    "color_input_check",
-    "width_input_check",
-]
+#__all__ = [
+#    "DiagramBase",
+#    "style_str_from_dict",
+#    "import_shape_database",
+#    "color_input_check",
+#    "width_input_check",
+#]
 
 
 def color_input_check(color_str):

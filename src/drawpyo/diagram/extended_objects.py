@@ -1,4 +1,4 @@
-from .objects import Object, object_from_library
+from drawpyo.diagram.objects import Object, object_from_library
 
 # These classes extend the basic diagram classes (Object or Edge) with a little bit of custom functionality for ergonomics or ease of use.
 

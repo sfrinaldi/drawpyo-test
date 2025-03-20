@@ -1,7 +1,7 @@
-from ..file import File
-from ..page import Page
-from ..diagram.objects import Object, Group
-from ..diagram.edges import Edge
+from drawpyo.file import File
+from drawpyo.page import Page
+from drawpyo.diagram.objects import Object, Group
+from drawpyo.diagram.edges import Edge
 
 
 class NodeObject(Object):

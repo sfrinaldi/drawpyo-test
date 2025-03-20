@@ -1,6 +1,6 @@
-from .base_diagram import DiagramBase
+from drawpyo.diagram.base_diagram import DiagramBase
 
-__all__ = ["TextFormat"]
+#__all__ = ["TextFormat"]
 
 directions = {None: None, "horizontal": 1, "vertical": 0}
 directions_inv = {v: k for k, v in directions.items()}
